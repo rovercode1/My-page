@@ -9,16 +9,26 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #feabe6, #f8c5ae); 
+    background: linear-gradient(to right, #ffffff, #ffbde09c)
 }
 
 nav{
-    width:80%;
+    width: 100%;
     position: sticky;
-    margin: 20px auto;
+    padding: 3px;
     z-index: 1;
     display: flex;
     align-items: center;
+    margin: auto;
+    background: #ffffffb8;
+}
+
+#nav-container{
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 .logo{
@@ -59,9 +69,44 @@ nav{
     transform: translateY(-50%);
 }
 
+.section{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    
+}
+
+.right-text h1{
+    font-size: 90px;
+}
+
+.boxes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.box{
+    max-width: 201px;
+    height: 200px;
+    width: 100%;
+    background: red;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #circle{
     width:1000px;
-    height: 1000px;
+    height: 1000vh;
     position: absolute;
     top: 0;
     left: 0;
